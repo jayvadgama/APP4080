@@ -3,46 +3,61 @@
 <head>
     <title>Team Members</title>
     <style>
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
         .card {
             width: 300px;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .card img {
-            width: 100%;
+            width: 200px;
             border-radius: 5px;
             margin-bottom: 10px;
+        }
+        .myTitle {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Our Team</h1>
+    <h1 class="myTitle">Our Team</h1>
     
-    <div class="card">
-        <img src="member1.jpg" alt="Team Member 1">
-        <h3>Jay Vadgama</h3>
-        <p>Role: Developer</p>
-    </div>
+    <div class="team-container">
+        <div class="card">
+            <img src="member1.jpg" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>Role: Developer</p>
+        </div>
 
-    <div class="card">
-        <img src="member2.jpg" alt="Team Member 2">
-        <h3>Hamza Farhan</h3>
-        <p>Role: Designer</p>
-    </div>
+        <div class="card">
+            <img src="member2.jpg" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Role: Designer</p>
+        </div>
 
-    <div class="card">
-        <img src="member3.jpg" alt="Team Member 3">
-        <h3>Eustace Essel</h3>
-        <p>Role: Marketing</p>
-    </div>
+        <div class="card">
+            <img src="member3.jpg" alt="Team Member 3">
+            <h3>Mike Johnson</h3>
+            <p>Role: Marketing</p>
+        </div>
 
-    <div class="card">
-        <img src="member4.jpg" alt="Team Member 4">
-        <h3>Jackson Mwaniki</h3>
-        <p>Role: Project Manager</p>
+        <div class="card">
+            <img src="member4.jpg" alt="Team Member 4">
+            <h3>Sarah Brown</h3>
+            <p>Role: Project Manager</p>
+        </div>
     </div>
 </body>
 </html>
